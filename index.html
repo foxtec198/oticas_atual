@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óticas Atual - By Vinicius Leme</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
+    <!-- AOS (Animações ao rolar a página) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        /* Hero Section */
+        .hero {
+            background: url('https://placehold.co/1920x800') center/cover no-repeat;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        /* Botão WhatsApp flutuante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 50px;
+            font-size: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .btn-oprimary{
+            background-color: #fea000;
+        }
+        .btn-oprimary:hover{
+            background-color: #fea000;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/3.png" class="img-fluid" width="80vw">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero d-flex flex-column justify-content-center align-items-center text-center">
+        <div data-aos="zoom-in">
+            <img src="img/1.png" class="img-fluid" width="250vw">
+        </div>
+        <div data-aos="fade-up">
+            <h1 class="display-4 fw-bold">Enxergue o Mundo com Clareza</h1>
+            <p class="lead">Óculos modernos para todos os estilos.</p>
+            <a href="#produtos" class="btn btn-oprimary btn-lg">Veja mais!</a>
+        </div>
+    </header>
+
+    <!-- Produtos -->
+    <section id="produtos" class="container py-5">
+        <h2 class="text-center mb-4" data-aos="fade-down">Nossos Óculos</h2>
+        <div class="row row-gap-3">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card shadow">
+                    <img src="https://placehold.co/300x200" class="card-img-top" alt="Óculos 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Óculos Clássico</h5>
+                        <p class="card-text">Elegante e sofisticado para todas as ocasiões.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card shadow">
+                    <img src="https://placehold.co/300x200" class="card-img-top" alt="Óculos 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Óculos Moderno</h5>
+                        <p class="card-text">Leve e estiloso, perfeito para o dia a dia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card shadow">
+                    <img src="https://placehold.co/300x200" class="card-img-top" alt="Óculos 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Óculos Esportivo</h5>
+                        <p class="card-text">Ideal para atividades ao ar livre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="text-bg-dark py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-down">O que nossos clientes dizem</h2>
+            <div class="row row-gap-1">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="p-4 shadow bg-white text-dark rounded">
+                        <p class="fst-italic">"Óculos incríveis, atendimento nota 10!"</p>
+                        <p class="fw-bold">- João Silva</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="p-4 shadow bg-white text-dark rounded">
+                        <p class="fst-italic">"Super leve e confortável, adorei minha nova armação!"</p>
+                        <p class="fw-bold">- Maria Oliveira</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="p-4 shadow bg-white text-dark rounded">
+                        <p class="fst-italic">"Super leve e confortável, adorei minha nova armação!"</p>
+                        <p class="fw-bold">- Maria Oliveira</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="p-4 shadow bg-white text-dark rounded">
+                        <p class="fst-italic">"Super leve e confortável, adorei minha nova armação!"</p>
+                        <p class="fw-bold">- Maria Oliveira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container py-5 text-center">
+        <h2 class="mb-4" data-aos="fade-down">Fale Conosco</h2>
+        <p class="lead" data-aos="fade-up">Entre em contato pelo WhatsApp para mais informações.</p>
+        <div>
+            <a href="https://wa.me/5521999999999" class="btn btn-success btn-lg">
+                <i class="bi bi-whatsapp"></i> Londrina
+            </a>
+            <a href="https://wa.me/5521999999999" class="btn btn-success btn-lg">
+                <i class="bi bi-whatsapp"></i> Cambé
+            </a>
+            <a href="https://wa.me/5521999999999" class="btn btn-success btn-lg">
+                <i class="bi bi-whatsapp"></i> Ibiporã
+            </a>
+            <a href="https://wa.me/5521999999999" class="btn btn-success btn-lg">
+                <i class="bi bi-whatsapp"></i> Cornelio
+            </a>
+
+        </div>
+    </section>
+ 
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5521999999999" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Inicializa animações AOS
+    </script>
+
+</body>
+</html>
