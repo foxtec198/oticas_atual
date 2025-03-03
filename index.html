@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
     <style>
+        body, html{
+            width: 100%;
+            overflow-x: hidden;
+        }
         /* Hero Section */
         .hero {
             /* background: url('https://placehold.co/1920x800') center/cover no-repeat; */
@@ -59,9 +63,7 @@
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/3.png" class="img-fluid" width="80vw">
-            </a>
+            <img src="img/3.png" class="img-fluid" width="80vw">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -77,10 +79,9 @@
 
     <!-- Hero Section -->
     <header class="hero mt-5 d-flex flex-column justify-content-center align-items-center text-center">
-        <div class="w-50" data-aos="fade-up">
+        <div class="px-1" style="max-width: 500px;" data-aos="fade-up">
             <p class="lead">AGENDE SUA CONSULTA CONOSCO E RECEBA</p>
-            <h1 class="display-4 fw-bold">DESCONTOS ESPECIAIS EM ARMAÇÕES E LENTES</h1>
-            <!-- <a href="#produtos" class="btn btn-oprimary btn-lg">Veja mais!</a> -->
+            <h1 class="display-6 fw-bold">DESCONTOS ESPECIAIS EM ARMAÇÕES E LENTES</h1>
         </div>
     </header>
 
@@ -174,6 +175,8 @@
             <i>© Desenvolvido por <a href="">Tecnobreve Solutions</a> 2025</i>
         </div>
     </section>
+
+    <section id="instagram"></section>
 
     <!-- Botão WhatsApp Flutuante -->
     <a href="#contato" class="whatsapp-float">
