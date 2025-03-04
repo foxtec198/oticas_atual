@@ -1,0 +1,42 @@
+
+body, html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('/img/banner_no_letter.png') center/cover no-repeat;
+    background-size: cover;
+    height: 65vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Botão WhatsApp flutuante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.btn-oprimary{
+    background-color: #fea000;
+    color: #fff;
+}
+.btn-oprimary:hover{
+    background-color: #fea000;
+    color: #333;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}

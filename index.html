@@ -15,48 +15,8 @@
     <!-- AOS (Animações ao rolar a página) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-    <style>
-        body, html{
-            width: 100%;
-            overflow-x: hidden;
-        }
-        /* Hero Section */
-        .hero {
-            /* background: url('https://placehold.co/1920x800') center/cover no-repeat; */
-            background: url('/img/banner_no_letter.png') center/cover no-repeat;
-            background-size: cover;
-            height: 65vh;
-            color: white;
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
-        
-        /* Botão WhatsApp flutuante */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            padding: 12px 16px;
-            border-radius: 50px;
-            font-size: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-        .btn-oprimary{
-            background-color: #fea000;
-            color: #fff;
-        }
-        .btn-oprimary:hover{
-            background-color: #fea000;
-            color: #333;
-        }
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-    </style>
+    <!-- Css Local -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
@@ -159,24 +119,66 @@
         </div>
     </section>
 
+    <!-- instagram -->
+    <section id="instagram" class="container p-5">
+        <div class="d-flex flex-column justify-content-center align-items-center gap-4 border p-5 rounded-4">
+            <!-- Informações -->
+            <div data-aos="fade-up" class="d-flex flex-row align-items-center gap-4 flex-wrap">
+                <div class="d-flex flex-row gap-4 align-items-center">
+                    <img src="img/1.png" class="rounded-circle object-fit-contain bg-dark p-2" width="50vh" height="50vh">
+                    <div class="d-flex flex-column" style="line-height: 15px;">
+                        <span class="fs-5 fw-bold">ÓTICAS ATUAL</span>
+                        <span class="fst-italic text-secondary">oticasatual</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row gap-4 flex-wrap justify-content-center align-items-center">
+                    <div class="d-flex flex-column align-items-center" style="line-height: 20px;">
+                        <span class="fs-5 fw-bold">126</span>
+                        <span>Publicações</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center" style="line-height: 20px;">
+                        <span class="fs-5 fw-bold">12k</span>
+                        <span>Seguidores</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center" style="line-height: 20px;">
+                        <span class="fs-5 fw-bold">8k</span>
+                        <span>Seguindo</span>
+                    </div>
+                    <a href="https://www.instagram.com/oticasatualprime/" target="_blank" class="btn btn-primary"><i class="bi bi-instagram"></i> Seguir</a>
+                </div>
+            </div>
+            <!-- Imagens -->
+            <div class="d-flex flex-row justify-content-center rounded border flex-wrap" data-aos="fade-down">
+                <img src="posts/post1.png" class="object-fit-cover img_post" height="220vh" width="220vh">
+                <img src="posts/post2.png" class="object-fit-cover" height="220vh" width="220vh">
+                <img src="posts/post3.png" class="object-fit-cover" height="220vh" width="220vh">
+                <img src="posts/post4.png" class="object-fit-cover" height="220vh" width="220vh">
+                <img src="posts/post5.png" class="object-fit-cover" height="220vh" width="220vh">
+                <img src="posts/post6.png" class="object-fit-cover" height="220vh" width="220vh">
+                <img src="posts/post7.png" class="object-fit-cover" height="220vh" width="220vh">
+                <img src="posts/post8.png" class="object-fit-cover" height="220vh" width="220vh">
+            </div>
+        </div>
+    </section>
+
     <!-- Bottom Section -->
     <section class="container mt-5 rounded-top-4 py-5 text-bg-dark">
         <div class="d-flex flex-row justify-content-around py-4 flex-wrap gap-2">
             <img src="img/3.png" class="img-fluid object-fit-contain" width="100vh" data-aos="zoom-in">
             <div class="d-flex flex-column gap-1" data-aos="fade-down">
                 <p><i class="bi bi-buildings-fill"></i> Nossos endereços</p>
-                <span class="mt-2">- R. Sen. Souza Naves, 726 - Centro, Londrina - PR, 86010-160</span>
-                <span>- Av. Canadá, 84 - Centro, Cambé - PR, 86181-070</span>
-                <span>- Av. Santos Dumont, 43 - Centro, Ibiporã - PR, 86200-000</span>
-                <span>- Av. XV de Novembro, 533 - Centro, Cornélio Procópio - PR, 86300-000</span>
+                <span class="mt-2">- R. Sen. Souza Naves, 726 - Centro, Londrina</span>
+                <span>- Av. Canadá, 84 - Centro, Cambé</span>
+                <span>- Av. Santos Dumont, 43 - Centro, Ibiporã</span>
+                <span>- Av. XV de Novembro, 533 - Centro, Corn. Procópio</span>
             </div>
         </div>
         <div class="text-center mt-5">
-            <i>© Desenvolvido por <a href="">Tecnobreve Solutions</a> 2025</i>
+            <i>© Desenvolvido por <a href="https://tecnobreve.onrender.com" target="_blank">Tecnobreve</a> 2025</i>
         </div>
     </section>
 
-    <section id="instagram"></section>
+   
 
     <!-- Botão WhatsApp Flutuante -->
     <a href="#contato" class="whatsapp-float">
@@ -191,5 +193,7 @@
     <script>
         AOS.init(); // Inicializa animações AOS
     </script>
+    <script async src="//www.instagram.com/embed.js"></script>
+
 </body>
 </html>
