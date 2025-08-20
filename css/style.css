@@ -10,11 +10,16 @@ body, html{
     /* background: url('/img/banner_no_letter_2.png') center/cover no-repeat; */
     background: url('../img/FUNDO ÓTICA ATUAL.png') center/cover no-repeat;
     background-size: cover;
-    height: 65vh;
+    background-position: left;
+    height: 100vh;
     color: white;
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+.subtitle{
+    text-decoration: underline #f7aa14 5px;
 }
 
 /* Botão WhatsApp flutuante */
