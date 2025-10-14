@@ -5,7 +5,7 @@ body, html{
 
 /* Hero Section */
 .hero {
-    background-image: url('https://github.com/foxtec198/oticas_atual/blob/b8fabf6715c654408b1d7e8ec4e0c5d9c2d518ae/banner.png');
+    background-image: url('https://raw.githubusercontent.com/foxtec198/oticas_atual/b8fabf6715c654408b1d7e8ec4e0c5d9c2d518ae/banner.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
