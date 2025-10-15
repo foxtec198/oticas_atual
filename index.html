@@ -39,10 +39,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#depoimentos">Avaliações</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#instagram">Instagram</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="alter_active(this)" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="alter_active(this)" href="#contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="alter_active(this)" href="#depoimentos">Avaliações</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="alter_active(this)" href="#instagram">Instagram</a></li>
                 </ul>
             </div>
         </div>
@@ -315,7 +315,7 @@
         AOS.init(); // Inicializa animações AOS
     </script>
     <script async src="//www.instagram.com/embed.js"></script>
-    
+    <script src="js/main.js"></script>
     <script>
         async function __set(type){
             await fetch('https://api.hubbix.com.br/analytics/', {
