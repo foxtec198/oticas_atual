@@ -30,12 +30,17 @@ body, html{
 /* Hero Section */
 .hero{
     margin-top: 60px;
-    background-size: contain;
     height: 80dvh;
-    background: var(--hero) no-repeat 70% top;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 800px) {
+    .hero{
+        background: var(--hero) no-repeat 70% top;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .hero{
         background: var(--hero-mobile) no-repeat center;
         background-size: cover;
