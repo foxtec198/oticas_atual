@@ -3,6 +3,7 @@
 
 :root{
     --hero: url("../img/hero_5.jpg");
+    --hero-mobile: url("../img/hero_mobile.jpg");
     --primary: #fea000;
     --primary-hover: #f7aa14;
 }
@@ -15,12 +16,13 @@
 }
 
 .funnels {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Funnel Sans", monospace;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 body, html{
+    font-family: "Funnel Sans", monospace;
     width: 100%;
     overflow-x: hidden;
 }
@@ -28,10 +30,16 @@ body, html{
 /* Hero Section */
 .hero{
     margin-top: 60px;
-    background: var(--hero) no-repeat;
-    background-position: 92%;
+    background-size: contain;
     height: 80dvh;
-    background-size: cover;
+    background: var(--hero) no-repeat 70% top;
+}
+
+@media only screen and (max-width: 500px) {
+    .hero{
+        background: var(--hero-mobile) no-repeat center;
+        background-size: cover;
+    }
 }
 
 .subtitle{
@@ -63,7 +71,9 @@ body, html{
 .whatsapp-float:hover {
     transform: scale(1.1);
 }
-
+.flex-basis{
+    flex-basis: 400px;
+}
 .text-primary{
     color: var(--primary) !important;
 }
